@@ -12,7 +12,6 @@ export default function Document() {
         />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-        <title>IngDesk</title>
       </Head>
       <body className="bg-white">
         <Main />
