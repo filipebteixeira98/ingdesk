@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-png" />
         <title>IngDesk</title>
         <Component {...pageProps} />
       </Head>
