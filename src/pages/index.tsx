@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { Input } from '@/components/Input'
+
 import logoImg from 'public/logo.svg'
 import backgroundImg from 'public/background-login.svg'
 
@@ -28,22 +30,20 @@ export default function Home() {
             <label htmlFor="username" className="text-[#0e0e58] text-xs">
               E-mail<span className="text-[#9eaae1]">*</span>
             </label>
-            <input
+            <Input
               type="text"
               id="username"
               name="username"
               placeholder="Teste@gmail.com"
-              className="block mt-1 w-full px-4 py-3 rounded bg-white border focus:border-[#5b78ff] outline-none"
             />
             <label htmlFor="password" className="text-[#0e0e58] text-xs">
               Senha<span className="text-[#9eaae1]">*</span>
             </label>
-            <input
+            <Input
               type="password"
               id="password"
               name="password"
               placeholder="********"
-              className="block mt-1 w-full px-4 py-3 rounded bg-white border focus:border-[#5b78ff] outline-none"
             />
             <button className="w-full h-[43px] mt-[22px] px-4 py-2 rounded bg-[#3758cc] text-white">
               Entrar
