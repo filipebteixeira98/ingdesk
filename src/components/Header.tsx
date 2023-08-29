@@ -43,9 +43,15 @@ export function Header() {
         </div>
         <div className="w-[168px] h-full flex items-center justify-center">
           <div className="flex gap-6">
-            <Gear className="w-6 h-6 text-[#828292]" />
-            <Bell className="w-6 h-6 text-[#828292]" />
-            <SignOut className="w-6 h-6 text-[#828292]" />
+            <button>
+              <Gear className="w-6 h-6 text-[#828292]" />
+            </button>
+            <button>
+              <Bell className="w-6 h-6 text-[#828292]" />
+            </button>
+            <button>
+              <SignOut className="w-6 h-6 text-[#828292]" />
+            </button>
           </div>
         </div>
       </nav>
