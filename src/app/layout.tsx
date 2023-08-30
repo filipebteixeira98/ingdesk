@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
+import { Providers } from '@/app/providers'
+
 import { AOSInit } from '@/app/aos'
 
 import './globals.css'
@@ -27,7 +29,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
       </head>
       <AOSInit />
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
